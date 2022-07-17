@@ -1,5 +1,11 @@
 # Docker e Node.js
 
+Índice
+* [Aplicação Node](#aplicacao_node)
+* [Dockerfile](#dockerfile)
+
+
+
 * [Aplicação Node](#aplicacao_node)
 
 Criar o arquivo package.json:
@@ -117,8 +123,16 @@ Visualiar o app via curl:
 curl -i http://localhost:8080
 ```
 
+# [Git](#git)
 
-
+``` git
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fabiocaettano/node-api-teste.git
+git push -u origin main
+```
 
 Referências:
 ! [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
