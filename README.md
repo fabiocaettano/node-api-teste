@@ -1,12 +1,14 @@
 # Docker e Node.js
 
 Índice
-* [Aplicação Node](#aplicacao_node)
+* [Aplicação Node](#aplicação_node)
 * [Dockerfile](#dockerfile)
+* [Construindo a imagem com Docker](#construindo_a_imagem_com_docker)
+* [Git](#git)
 
 
 
-# [Aplicação Node]
+# Aplicação Node
 
 Criar o arquivo package.json:
 
@@ -57,7 +59,7 @@ app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 ```
 
-* [Dockerfile](#dockerfile)
+# Dockerfile
 
 Criar o Dockerfile:
 
@@ -83,7 +85,7 @@ Criar o arquivo .dockerignore:
 node_modules
 ```
 
-# [Imagem Docker](#imagem_docker)
+# Construindo a imagem com Docker
 
 
 Criar a imagem:
@@ -123,7 +125,7 @@ Visualiar o app via curl:
 curl -i http://localhost:8080
 ```
 
-# [Git](#git)
+# Git
 
 ``` git
 git init
@@ -135,4 +137,5 @@ git push -u origin main
 ```
 
 Referências:
+
 ! [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
