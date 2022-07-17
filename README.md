@@ -3,7 +3,7 @@
 Índice
 * [Aplicação Node](#app)
 * [Dockerfile](#dockerfile)
-* [Construindo a imagem com Docker](#Construindo_a_imagem_com_Docker)
+* [Construindo a imagem com Docker](#Construindo-a-imagem-com-Docker)
 * [Git](#git)
 
 
