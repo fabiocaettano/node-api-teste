@@ -1,0 +1,15 @@
+{
+  "name": "crudmysql001",
+  "version": "1.0.0",
+  "description": "API Teste",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "author": "Fabio Almeida Caetano",
+  "license": "ISC"
+}
