@@ -6,7 +6,7 @@
 
 
 
-* [Aplicação Node](#aplicacao_node)
+# [Aplicação Node]
 
 Criar o arquivo package.json:
 
@@ -83,7 +83,7 @@ Criar o arquivo .dockerignore:
 node_modules
 ```
 
-* [Imagem Docker](#imagem_docker)
+# [Imagem Docker](#imagem_docker)
 
 
 Criar a imagem:
