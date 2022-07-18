@@ -91,7 +91,7 @@ node_modules
 Criar a imagem:
 
 ``` cli
-docker build -t fabiocaettano74/api-teste:01
+docker build -t fabiocaettano74/api-teste:01 .
 ```
 
 Executar o container:
@@ -126,6 +126,14 @@ curl -i http://localhost:8080
 ```
 
 # Git
+
+Criar o arquivo .gitignore:
+
+```
+node_modules/
+```
+
+Comandos:
 
 ``` git
 git init
