@@ -128,6 +128,13 @@ curl -i http://localhost:8080
 
 # Docker Compose
 
+Deletar o container: 
+
+```
+docker container ls
+docker container rm -f idDoContainer
+```
+
 Criar o manifesto:
 
 ``` yaml
