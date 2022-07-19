@@ -92,13 +92,13 @@ node_modules
 Criar a imagem:
 
 ``` cli
-docker build -t fabiocaettano74/api-teste:01 .
+docker build -t fabiocaettano74/node-app-base:01 .
 ```
 
 Executar o container:
 
 ``` cli
-docker run -p 8080:8080 -d fabiocaettano74/api-teste:01
+docker run -p 8080:8080 -d fabiocaettano74/node-app-base:01
 ```
 
 Verificar logs:
@@ -125,6 +125,21 @@ Visualiar o app via curl:
 ``` curl
 curl -i http://localhost:8080
 ```
+
+Criar versão latest:
+
+```
+docker container tag fabiocaettano74/node-app-base:01 fabiocaettano74/node-app-base:latest
+```
+
+Enviar para o DockerHub:
+
+```
+docker push fabiocaettano74/node-app-base:01
+docker push fabiocaettano74/node-app-base:latest
+
+```
+
 
 # Docker Compose
 
