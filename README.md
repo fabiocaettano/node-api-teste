@@ -171,7 +171,12 @@ networks:
 Criar o container:
 
 ```
-docker-compose up -d
+docker-compose up -d --build
+```
+
+Consultar o container:
+
+```
 docker container ls
 ```
 
