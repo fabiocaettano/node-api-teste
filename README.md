@@ -4,6 +4,7 @@
 * [Aplicação Node](#aplicação-node)
 * [Dockerfile](#dockerfile)
 * [Construindo a imagem com Docker](#Construindo-a-imagem-com-Docker)
+* [Docker-Compose](#Docker-Compose)
 * [Git](#git)
 
 
@@ -124,6 +125,39 @@ Visualiar o app via curl:
 ``` curl
 curl -i http://localhost:8080
 ```
+
+# Docker Compose
+
+Criar o manifesto:
+
+``` yaml
+version: '3.3'
+services:
+  node:
+    build:
+      context: node
+    command: bash -c "npm start"
+    ports:
+      - "8080:8080"
+    networks:
+      - node-network
+networks:
+  node-network:
+    driver: bridge
+```
+
+Criar o container:
+
+```
+docker-compose up -d
+docker container ls
+```
+
+Excluir
+```
+docker-compose down
+```
+
 
 # Git
 
